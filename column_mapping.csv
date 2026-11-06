@@ -1,0 +1,9 @@
+Project Field,Dataset Column
+Invoice ID,invoice_id
+Customer,"customer_id, customer_name"
+Invoice Date,invoice_date
+Due Date,due_date
+Payment Date/Status,"payment_date, payment_status"
+Amount,total_amount
+Currency,currency
+Country,customer_country

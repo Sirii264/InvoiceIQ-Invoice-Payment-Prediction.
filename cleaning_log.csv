@@ -1,0 +1,8 @@
+Issue,Action Taken,Reason,Rows Affected
+Missing Values,Retained missing payment outcomes,Unpaid invoices have no confirmed payment outcome,641181
+Duplicate Invoices,No removal required,No duplicate invoice IDs found,0
+Negative Amounts,No correction required,No negative invoice amounts found,0
+Invalid Due Dates,No correction required,No due dates before invoice dates found,0
+Invalid Payment Dates,No correction required,No paid payment dates before invoice dates found,0
+Date Conversion,Converted dates to datetime,Enable date calculations,2000000
+Feature Engineering,Created payment features,Support future ML predictions,2000000
