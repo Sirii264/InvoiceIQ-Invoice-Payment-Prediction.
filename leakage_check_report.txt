@@ -1,0 +1,46 @@
+
+INVOICEIQ - WEEK 3 LEAKAGE CHECK REPORT
+
+1. PREDICTION OBJECTIVE
+Classification: Predict whether an invoice will be paid late.
+Regression: Predict payment delay in days.
+
+2. PREDICTION POINT
+Invoice creation date.
+
+3. EXCLUDED FUTURE INFORMATION
+- payment_date
+- payment_delay
+- days_to_pay
+- paid_late
+- paid_late_target
+- delay_days
+- payment_status
+- invoice_status
+- is_overdue
+
+4. HISTORICAL CUSTOMER FEATURES
+Customer historical payment features use only payment
+events occurring before the current invoice date.
+
+5. PREPROCESSING
+- Missing values handled using imputers.
+- Categorical features encoded using OneHotEncoder.
+- Numerical features scaled using StandardScaler.
+- Preprocessing fitted on training data only.
+
+6. DATA SPLITTING
+Chronological training, validation and testing split.
+
+7. DATASET LIMITATION
+The dataset contains zero positive late-payment examples.
+Therefore, a meaningful late-payment classification model
+cannot currently be trained.
+
+The regression target contains early and on-time payments,
+but no positive delay values.
+
+8. CONCLUSION
+The dataset has been prepared for further ML development.
+The target distribution limitation must be addressed before
+training a late-payment prediction model.

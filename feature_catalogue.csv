@@ -1,0 +1,32 @@
+Feature_Name,Data_Type,Description,Feature_Type
+invoice_date,datetime64[ns],Invoice date,Date
+due_date,datetime64[ns],Invoice due date,Date
+customer_city,object,Invoice-related information available at prediction time,Categorical
+customer_state,object,Invoice-related information available at prediction time,Categorical
+customer_country,object,Invoice-related information available at prediction time,Categorical
+product_category,object,Invoice-related information available at prediction time,Categorical
+quantity,int64,Invoice-related information available at prediction time,Numerical
+unit_price,float64,Invoice-related information available at prediction time,Numerical
+discount_percent,float64,Invoice-related information available at prediction time,Numerical
+tax_percent,float64,Invoice-related information available at prediction time,Numerical
+subtotal,float64,Invoice-related information available at prediction time,Numerical
+discount_amount,float64,Invoice-related information available at prediction time,Numerical
+tax_amount,float64,Invoice-related information available at prediction time,Numerical
+shipping_cost,float64,Invoice-related information available at prediction time,Numerical
+total_amount,float64,Invoice-related information available at prediction time,Numerical
+currency,object,Invoice-related information available at prediction time,Categorical
+payment_method,object,Invoice-related information available at prediction time,Categorical
+order_channel,object,Invoice-related information available at prediction time,Categorical
+invoice_month,int32,Invoice month,Numerical
+invoice_quarter,int32,Invoice quarter,Numerical
+invoice_weekday,object,Invoice weekday,Categorical
+is_month_end,bool,Indicates whether invoice falls in the last 5 days of the month,Numerical
+payment_term_days,int64,Number of days between invoice date and due date,Numerical
+previous_invoice_count,int64,Number of previous invoices for the customer,Numerical
+previous_avg_amount,float64,Average amount of previous invoices in the same currency,Numerical
+has_previous_history,int64,Indicates whether customer has previous invoice history,Numerical
+previous_avg_delay,float64,Historical average payment delay using earlier paid invoices,Numerical
+previous_late_rate,float64,Historical late payment rate using earlier paid invoices,Numerical
+log_amount,float64,Log-transformed invoice amount,Numerical
+amount_bucket,category,Invoice amount category,Categorical
+amount_vs_customer_avg,float64,Current invoice amount divided by previous average amount in the same currency,Numerical
